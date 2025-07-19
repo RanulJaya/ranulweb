@@ -1,0 +1,21 @@
+.move{
+  background-color:  rgb(48, 184, 218);
+  height: 100px;
+  width: 100%;
+}
+
+.move1{
+  background-color: rgb(230, 14, 14);
+  padding: 50px;
+}
+
+@media screen and (max-width: 700px){
+  .move{
+    display: none;
+  }
+}
+
+.img {
+  position: relative;
+  margin: auto;
+}
