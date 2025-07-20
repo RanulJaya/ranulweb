@@ -10,6 +10,8 @@ dist/
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+/__test__
+/__mocks__
 
 
 # testing
