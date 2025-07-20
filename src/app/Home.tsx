@@ -3,7 +3,7 @@ import { Data, returnName, returnAge } from './data/data'
 import { Suspense } from 'react'
 import Loading from './Loading/loadingpage'
 import Image from 'next/image'
-
+import motion from "tailwindcss-motion";
 
 
 export function test () {  
@@ -22,11 +22,13 @@ export function test () {
     }
 }
 
+
 export function Home() {
 
     return (
+        
     <section className= {test()}>
-        <div className={"mx-auto max-w-md overflow-hidden bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 @sm:items-center @sm:space-y-0 @sm:gap-x-6 @sm:py-4 box  md:max-w-2xl"} style= {{marginBottom: 10}}>
+        <div className={"motion-preset-expand mx-auto max-w-md overflow-hidden bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 @sm:items-center @sm:space-y-0 @sm:gap-x-6 @sm:py-4 box  md:max-w-2xl"} style= {{marginBottom: 10}}>
          <div className={"flex flex-col sm:flex-row"}>
             <Image  width={150}
                   height={100} className="mx-auto h-40 rounded-full sm:mx-0 sm:shrink-0" src="./Profile-pic.jpg" alt="" />
