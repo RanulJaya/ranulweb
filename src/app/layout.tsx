@@ -26,12 +26,14 @@ export default function RootLayout(
   return (
     <html lang="en">
       <body>
+
         {showVisible === false ? <Image className= {style.img}
                   src="./infinite-spinner.svg"
                   alt="Next.js logo"
                   width={280}
                   height={208}
-                unoptimized />: children}
+                unoptimized />: 
+                 children}
       </body>
     </html>
   )
