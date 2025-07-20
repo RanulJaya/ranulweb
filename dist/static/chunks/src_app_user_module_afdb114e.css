@@ -1,0 +1,24 @@
+/* [project]/src/app/user.module.css [app-client] (css) */
+.user-module__w9PESa__move {
+  background-color: #30b8da;
+  width: 100%;
+  height: 100px;
+}
+
+.user-module__w9PESa__move1 {
+  background-color: #e60e0e;
+  padding: 50px;
+}
+
+@media screen and (max-width: 700px) {
+  .user-module__w9PESa__move {
+    display: none;
+  }
+}
+
+.user-module__w9PESa__img {
+  margin: auto;
+  position: relative;
+}
+
+/*# sourceMappingURL=src_app_user_module_afdb114e.css.map*/
