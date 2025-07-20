@@ -1,4 +1,3 @@
-
 export default function Loading() {
     return (            
             <button type="button" className="inline-flex cursor-not-allowed items-center rounded-md bg-indigo-500 px-4 py-2 text-sm leading-6 font-semibold text-white transition duration-150 ease-in-out hover:bg-indigo-400 display:relative" disabled>
