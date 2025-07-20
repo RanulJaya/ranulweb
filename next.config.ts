@@ -12,8 +12,6 @@ const nextConfig: NextConfig = {
   images: { 
     unoptimized: true ,
     dangerouslyAllowSVG: true,
-    loader: 'custom',
-    loaderFile: './my-loader.ts',
   } 
 };
 
