@@ -1,5 +1,5 @@
 'use client'
-import './globals.css'
+// import './globals.css'
 import { useEffect, useState } from 'react';
 import Image from "next/image";
 import style from './user.module.css'
@@ -27,11 +27,11 @@ export default function RootLayout(
     <html lang="en">
       <body>
         {showVisible === false ? <Image className= {style.img}
-                  src="/infinite-spinner.svg"
+                  src="./infinite-spinner.svg"
                   alt="Next.js logo"
                   width={280}
                   height={208}
-                />: children}
+                unoptimized />: children}
       </body>
     </html>
   )

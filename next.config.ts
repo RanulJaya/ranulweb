@@ -5,7 +5,14 @@ const nextConfig: NextConfig = {
   // experimental: {
   //   ppr: 'incremental',
   // },
-   output: 'export',
+
+  output: 'export',
+  distDir: 'dist',
+
+  images: { 
+    unoptimized: true ,
+    dangerouslyAllowSVG: true,
+  } 
 };
 
 export default nextConfig;
