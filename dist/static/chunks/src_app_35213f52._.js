@@ -48,8 +48,8 @@ function RootLayout(param) {
                 className: __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$user$2e$module$2e$css__$5b$app$2d$client$5d$__$28$css__module$29$__["default"].img,
                 src: "./infinite-spinner.svg",
                 alt: "Next.js logo",
-                width: 280,
-                height: 208,
+                width: 680,
+                height: 600,
                 unoptimized: true
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",

@@ -30,8 +30,8 @@ export default function RootLayout(
         {showVisible === false ? <Image className= {style.img}
                   src="./infinite-spinner.svg"
                   alt="Next.js logo"
-                  width={280}
-                  height={208}
+                  width={680}
+                  height={600}
                 unoptimized />: 
                  children}
       </body>
