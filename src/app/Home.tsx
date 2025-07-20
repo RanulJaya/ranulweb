@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import './userpage.css'
 import { Data, returnName, returnAge } from './data/data'
 import { Suspense } from 'react'

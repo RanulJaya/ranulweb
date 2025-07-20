@@ -9,7 +9,10 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'dist',
 
-  images: { unoptimized: true } 
+  images: { 
+    unoptimized: true ,
+    dangerouslyAllowSVG: true,
+  } 
 };
 
 export default nextConfig;
