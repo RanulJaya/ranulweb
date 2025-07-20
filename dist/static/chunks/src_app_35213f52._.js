@@ -53,7 +53,7 @@ function RootLayout(param) {
                 unoptimized: true
             }, void 0, false, {
                 fileName: "[project]/src/app/layout.tsx",
-                lineNumber: 29,
+                lineNumber: 30,
                 columnNumber: 34
             }, this) : children
         }, void 0, false, {
