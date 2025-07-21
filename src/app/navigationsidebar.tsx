@@ -15,7 +15,7 @@ import Link from 'next/link'
                             query: { name: 'test' },
                         }}
                         >
-                        About us
+                        About me
                         </Link>
                     </li>
                     <li>

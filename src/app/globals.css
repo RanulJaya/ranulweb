@@ -31,6 +31,10 @@
     --tw-font-weight: var(--font-weight-semibold) /* 600 */;
     font-weight: var(--font-weight-semibold) /* 600 */;
   }
+
+  p {
+    color: #ededed;
+  }
 }
 
 @media (prefers-color-scheme: light) {

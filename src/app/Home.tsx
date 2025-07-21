@@ -42,7 +42,7 @@ export function Home() {
 
 
 
-        <div className="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5">
+        <div className="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 motion-scale-in-[0.5] motion-translate-x-in-[13%] motion-translate-y-in-[109%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.53s]/scale motion-duration-[0.00s]/translate motion-duration-[0.35s]/opacity motion-duration-[0.63s]/rotate motion-duration-[0.27s]/blur motion-ease-spring-bouncy">
             <div>
                 <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
                     <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -54,7 +54,7 @@ export function Home() {
             <h3 className={"mt-5 text-base font-medium tracking-tight styledark1"}>About Me</h3>
                     
                 <Suspense fallback = {<Loading/>}>
-                    <p className="mt-2 text-sm text-gray-500">
+                    <p className="mt-3 text-sm text-gray-500">
                         <Data/>
                     </p>
                 </Suspense>
