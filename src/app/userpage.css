@@ -19,8 +19,6 @@ ul {
 }
 
 
-
-
 .div1 {
   display: none;
     background-color:  rgb(48, 184, 218);
@@ -64,8 +62,6 @@ ul {
 .test {
     display: flex;
     text-align: left;
-    padding-top: 30px;
-    padding-left: 100px;
   }
 
   .page {
@@ -122,8 +118,5 @@ ul {
     display: block;
   }
 
-  a {
-    padding-right: 52px;
-    padding-left: 52px;
-  }
+
 }
