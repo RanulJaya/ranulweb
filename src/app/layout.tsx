@@ -26,7 +26,6 @@ export default function RootLayout(
   return (
     <html lang="en">
       <body>
-
         {showVisible === false ? <Image className= {style.img}
                   src="./infinite-spinner.svg"
                   alt="Next.js logo"
