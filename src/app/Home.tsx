@@ -3,6 +3,7 @@ import { Data, returnName, returnAge } from './data/data'
 import { Suspense } from 'react'
 import Loading from './Loading/loadingpage'
 import Image from 'next/image'
+import Footer from './footer/footer'
 
 
 export function test () {  
@@ -26,7 +27,7 @@ export function Home() {
 
     return (
         <section className= {test()}>
-            <div className={"motion-preset-expand mx-auto max-w-md overflow-hidden bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 @sm:items-center @sm:space-y-0 @sm:gap-x-6 @sm:py-4 box  md:max-w-2xl"} style= {{marginBottom: 10}}>
+            <div className={"motion-preset-expand mx-auto max-w-md overflow-hidden bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 @sm:items-center @sm:space-y-0 @sm:gap-x-6 @sm:py-4 box  md:max-w-2xl "+ "resizepane"} style= {{marginBottom: 10}}>
             <div className={"flex flex-col sm:flex-row"}>
                 <Image  width={150}
                     height={100} className="motion-preset-slide-right motion-duration-1000 mx-auto h-40 rounded-full sm:mx-0 sm:shrink-0" src="./Profile-pic.jpg"  alt="" />
@@ -41,7 +42,7 @@ export function Home() {
 
 
 
-            <div className="bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 motion-scale-in-[0.5] motion-translate-x-in-[13%] motion-translate-y-in-[109%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.53s]/scale motion-duration-[0.00s]/translate motion-duration-[0.35s]/opacity motion-duration-[0.63s]/rotate motion-duration-[0.27s]/blur motion-ease-spring-bouncy">
+            <div className={"getpanel bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 motion-scale-in-[0.5] motion-translate-x-in-[13%] motion-translate-y-in-[109%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.53s]/scale motion-duration-[0.00s]/translate motion-duration-[0.35s]/opacity motion-duration-[0.63s]/rotate motion-duration-[0.27s]/blur motion-ease-spring-bouncy"}>
                 <div>
                     <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
                         <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
@@ -50,14 +51,17 @@ export function Home() {
                         </svg>
                     </span>
                 </div>
-                <h3 className={"mt-5 text-base styledark1 text-gray-900 dark:text-white"}>About Me</h3>
+                <h3 className={"mt-5 text-base styledark1 text-gray-900 dark:text-white font-medium tracking-tight"}>About Me</h3>
                         
                     <Suspense fallback = {<Loading/>}>
-                        <p className="mt-3 text-sm text-gray-500 ">
+                        <p className="mt-3 text-sm dark:text-white text-black font-medium tracking-tight">
                             <Data/>
                         </p>
                     </Suspense>
             </div>
+
+
+          <Footer/>
         </section>
     )
 
