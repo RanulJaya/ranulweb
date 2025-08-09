@@ -10,14 +10,14 @@ export default function Sidebar() {
 
         if(document.getElementById("barside")?.className == "sidebarshow"){
             document.getElementsByClassName("sidebarshow")[0].className = "visibility: hidden"
-            document.getElementsByTagName("a")[3].className = "visibility: hidden"
-            document.getElementsByTagName("a")[4].className = "visibility: hidden"
+            document.getElementsByTagName("a")[5].className = "visibility: hidden"
+            document.getElementsByTagName("a")[6].className = "visibility: hidden"
 
         }
         else{
             document.getElementsByClassName("visibility: hidden")[0].className = "sidebarshow"
-            document.getElementsByTagName("a")[3].className = "text-1xl font-bold"
-            document.getElementsByTagName("a")[4].className = "text-1xl font-bold"
+            document.getElementsByTagName("a")[5].className = "text-1xl font-bold"
+            document.getElementsByTagName("a")[6].className = "text-1xl font-bold"
 
         }
 

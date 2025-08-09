@@ -3,6 +3,7 @@ import { Data, returnName, returnAge } from './data/data'
 import { Suspense } from 'react'
 import Loading from './Loading/loadingpage'
 import Image from 'next/image'
+import Footer from './footer/footer'
 
 
 export function test () {  
@@ -58,6 +59,9 @@ export function Home() {
                         </p>
                     </Suspense>
             </div>
+
+
+          <Footer/>
         </section>
     )
 

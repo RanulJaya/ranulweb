@@ -25,7 +25,7 @@ import Link from 'next/link'
                             query: { slug: 'my-post' },
                         }}
                         >
-                        Blog Post 
+                        Projects 
                         </Link>
                     </li>
                 </ul>

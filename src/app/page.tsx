@@ -48,13 +48,14 @@ export default function Page() {
                     query: { slug: 'my-post' },
                 }} style={{position: "absolute", left: 290, bottom: 25}}
               >
-              Blog Post 
+              Projects
               </Link>
             </ul>
         </div>
-        <Home/>  
+        <Home/>
         <Sidebar/>
         <NavBar/>
+        
   </section>
   )
 }
