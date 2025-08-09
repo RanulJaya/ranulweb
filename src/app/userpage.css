@@ -80,10 +80,29 @@ ul {
   }
 
 
+@media screen and (max-width: 1170px){
+
+
+  .resizepane{
+    width: 430px;
+  }
+
+  .getpanel{
+    width: 470px;
+  }
+
+  div  {
+    display: inline-block;
+    width: 100%;
+  }
+  
+}
+
+
 @media screen and (max-width: 700px){
   .div1
   {
-    width: 100%;
+    width: 1000%;
     height: 100px;
     display: block;
   }
@@ -91,6 +110,8 @@ ul {
   .page {
     position: absolute;
     display: block;
+    top: 110px;
+    left: 220px;
     top: 110px;
     margin: left;
   }
