@@ -1,6 +1,4 @@
-//import style from './userpage.css'
-import Link from 'next/link'
-
+'use client'
 
  export default function NavigationSideBar() { 
     return (
@@ -9,24 +7,16 @@ import Link from 'next/link'
             <div className='visibility: hidden' id='barside'>
                 <ul>
                     <li>
-                        <Link className='visibility: hidden'
-                        href={{
-                            pathname: '/',
-                            query: { name: 'test' },
-                        }}
-                        >
+                        <button className='visibility: hidden'
+                        onClick={() => console.log("About me clicked")}>
                         About me
-                        </Link>
+                        </button>
                     </li>
                     <li>
-                        <Link className='visibility: hidden'
-                        href={{
-                            pathname: '/',
-                            query: { slug: 'my-post' },
-                        }}
-                        >
+                        <button className='visibility: hidden'
+                        onClick={() => console.log("Projects clicked")}>
                         Projects 
-                        </Link>
+                        </button>
                     </li>
                 </ul>
             </div>

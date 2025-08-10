@@ -5,8 +5,7 @@ import Loading from './Loading/loadingpage'
 import Image from 'next/image'
 import Footer from './footer/footer'
 
-
-export function test () {  
+export function changeOccurance () {  
 
     if(typeof document === 'undefined'){
         return ("page")
@@ -17,16 +16,18 @@ export function test () {
             document.getElementsByClassName("page")[0].className = "slidepage"
         } 
         else{
+            console.log(document.getElementsByClassName("slidepage"))
             document.getElementsByClassName("slidepage")[0].className = "page"
         }
     }
 }
 
 
+
 export function Home() {
 
     return (
-        <section className= {test()}>
+        <section className= {changeOccurance()}>
             <div className={"motion-preset-expand mx-auto max-w-md overflow-hidden bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 @sm:items-center @sm:space-y-0 @sm:gap-x-6 @sm:py-4 box  md:max-w-2xl "+ "resizepane"} style= {{marginBottom: 10}}>
             <div className={"flex flex-col sm:flex-row"}>
                 <Image  width={150}
@@ -42,7 +43,8 @@ export function Home() {
 
 
 
-            <div className={"getpanel bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 motion-scale-in-[0.5] motion-translate-x-in-[13%] motion-translate-y-in-[109%] motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.53s]/scale motion-duration-[0.00s]/translate motion-duration-[0.35s]/opacity motion-duration-[0.63s]/rotate motion-duration-[0.27s]/blur motion-ease-spring-bouncy"}>
+            <div className={"getpanel bg-white dark:bg-gray-800 rounded-lg px-6 py-8 ring shadow-xl ring-gray-900/5 motion-scale-in-[0.5] motion-translate-x-in-[13%] motion-translate-y-in-[109%] " +
+                 "motion-opacity-in-[0%] motion-rotate-in-[-10deg] motion-blur-in-[5px] motion-duration-[0.53s]/scale motion-duration-[0.00s]/translate motion-duration-[0.35s]/opacity motion-duration-[0.63s]/rotate motion-duration-[0.27s]/blur motion-ease-spring-bouncy"}>
                 <div>
                     <span className="inline-flex items-center justify-center rounded-md bg-indigo-500 p-2 shadow-lg">
                         <svg className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">

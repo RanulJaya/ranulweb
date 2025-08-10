@@ -31,7 +31,7 @@ export default function RootLayout(
                   alt="Next.js logo"
                   width={680}
                   height={600}
-                unoptimized />: 
+                  unoptimized />: 
                  children}
       </body>
     </html>
