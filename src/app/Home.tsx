@@ -4,6 +4,7 @@ import { Suspense } from 'react'
 import Loading from './Loading/loadingpage'
 import Image from 'next/image'
 import Footer from './footer/footer'
+import GithubLinkCard from './GithubLinkCard'
 
 export function changeOccurance () {  
 
@@ -62,6 +63,12 @@ export function Home() {
                     </Suspense>
             </div>
 
+            
+          <GithubLinkCard
+            title="My GitHub Projects"
+            description="Check out my projects on GitHub."
+            href="https://github.com/RanulJaya"
+          />
 
           <Footer/>
         </section>

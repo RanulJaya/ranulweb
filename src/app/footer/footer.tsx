@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex items-center bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300" style={{ padding: "10px", marginTop: "10rem"}}>
+    <footer className="flex items-center bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300" style={{ padding: "10px", marginTop: "1rem"}}>
 
         <a href="https://www.linkedin.com/in/ranul-jayawardena-278350211" target="_blank" rel="noopener noreferrer" className="transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-sky-700"  style={{ padding: "10px"}}>
             <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 448 512" className="Home_socialIcons__FC+ik" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
