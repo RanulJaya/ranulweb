@@ -28,10 +28,6 @@ export default function GithubLinkCard({ title, description, href, className }: 
       role="region"
       aria-label={title} style={{ marginTop: "1rem"}}
     >
-      {/* Top-left icon tile
-      <div className="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-indigo-500 to-blue-600 shadow">
-        <EditIcon className="h-5 w-5 text-white" />
-      </div> */}
 
       {/* Title */}
       <h3 className="mb-2 text-xl font-semibold tracking-tight text-slate-50">{title}</h3>
@@ -51,16 +47,6 @@ export default function GithubLinkCard({ title, description, href, className }: 
           <GithubIcon className="h-5 w-5 transition-transform group-hover:scale-110" />
           <span>View on GitHub</span>
         </a>
-
-        {/* Optional subtle permalink to encourage exploration */}
-        <a
-          href={href}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="text-sm text-slate-400 underline-offset-4 hover:text-slate-200 hover:underline"
-        >
-          {cleanUrl(href)}
-        </a>
       </div>
 
       {/* Decorative corner glow */}
@@ -69,14 +55,6 @@ export default function GithubLinkCard({ title, description, href, className }: 
   );
 }
 
-function cleanUrl(url: string) {
-  try {
-    const u = new URL(url);
-    return `${u.hostname}${u.pathname}`.replace(/\/$/, "");
-  } catch {
-    return url;
-  }
-}
 
 // --- Minimal inline SVG icons (no external deps) ---
 function GithubIcon({ className }: { className?: string }) {
